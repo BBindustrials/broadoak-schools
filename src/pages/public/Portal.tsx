@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { FaUserGraduate, FaChalkboardTeacher, FaUserLock, FaBookOpen, FaChartLine, FaCreditCard } from 'react-icons/fa';
+import { SEO } from '../../components/common/SEO';
 
 export const Portal = () => {
   const handleExamPortalClick = () => {
@@ -7,6 +8,12 @@ export const Portal = () => {
   };
 
   return (
+    <>
+      <SEO 
+        title="Portals" 
+        description="Access your personalized dashboard for academic resources, examinations, and school management."
+        url="https://broadoakschools.com/portal"
+      />
     <main className="portal-page">
       {/* Hero Section - Fixed spacing */}
       <div className="portal-hero-spacer"></div>
@@ -171,5 +178,6 @@ export const Portal = () => {
         </div>
       </section>
     </main>
+      </>
   );
 };

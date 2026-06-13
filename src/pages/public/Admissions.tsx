@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { fetchAdmissionInfo, type AdmissionInfo } from '../../services/admissionService';
 import { FaDownload, FaCalendarAlt, FaCheckCircle, FaFileAlt, FaMoneyBillWave, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
+import { SEO } from '../../components/common/SEO';
 
 export const Admissions = () => {
   const [admissionInfo, setAdmissionInfo] = useState<AdmissionInfo | null>(null);
@@ -45,6 +46,12 @@ export const Admissions = () => {
   }
 
   return (
+    <>
+      <SEO 
+        title="Admissions" 
+        description="Learn about the admission process at The Broadoak Schools. Find out the requirements and steps to enroll your child."
+        url="https://broadoakschools.com/admissions"
+      />
     <main className="admissions-page">
       <section className="admissions-hero">
         <div className="container">
@@ -186,5 +193,6 @@ export const Admissions = () => {
         </div>
       </section>
     </main>
+      </>
   );
 };

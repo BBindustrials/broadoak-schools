@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { fetchFeaturedGallery, type GalleryImage } from '../../services/galleryService';
 import { fetchStudentLifeSettings, type StudentLifeSettings } from '../../services/studentLifeService';
+import { SEO } from '../../components/common/SEO';
 
 // Club data with updated meeting times
 const CLUBS = [
@@ -172,6 +173,12 @@ export const StudentLife = () => {
   };
 
   return (
+    <>
+      <SEO 
+        title="Student Life" 
+        description="Explore the vibrant student life at The Broadoak Schools. Discover clubs, sports, and annual events."
+        url="https://broadoakschools.com/student-life"
+      />
     <main className="student-life-page">
       <section className="student-life-hero">
         <div className="container">
@@ -357,5 +364,6 @@ export const StudentLife = () => {
         </div>
       )}
     </main>
+        </>
   );
 };

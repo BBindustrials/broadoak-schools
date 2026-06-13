@@ -1,0 +1,8 @@
+# robots.txt for The Broadoak Schools
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /dashboard/
+Sitemap: https://broadoakschools.com/sitemap.xml
+Host: https://broadoakschools.com

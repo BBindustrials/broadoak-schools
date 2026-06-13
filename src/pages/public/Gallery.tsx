@@ -3,6 +3,7 @@
 /* eslint-disable react-hooks/immutability */
 import { useEffect, useState } from 'react';
 import { fetchPublicGallery, fetchGalleryByCategory, type GalleryImage } from '../../services/galleryService';
+import { SEO } from '../../components/common/SEO';
 
 const CATEGORIES = [
   'All',
@@ -65,6 +66,12 @@ export const GalleryPage = () => {
   }
 
   return (
+    <>
+      <SEO 
+        title="Gallery" 
+        description="Explore our photo gallery and see the exciting moments at The Broadoak Schools."
+        url="https://broadoakschools.com/gallery"
+      />
     <main className="gallery-page">
       <section className="gallery-hero">
         <div className="container">
@@ -132,5 +139,6 @@ export const GalleryPage = () => {
         </div>
       )}
     </main>
+      </>
   );
 };

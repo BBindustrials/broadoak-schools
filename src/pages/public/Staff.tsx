@@ -2,6 +2,7 @@
 /* eslint-disable react-hooks/immutability */
 import { useEffect, useState } from 'react';
 import { fetchActiveStaff, fetchStaffByDepartment, type StaffMember } from '../../services/staffService';
+import { SEO } from '../../components/common/SEO';
 
 const DEPARTMENTS = [
   'All',
@@ -62,6 +63,12 @@ export const StaffPage = () => {
   }
 
   return (
+    <>
+      <SEO 
+        title="Our Staff" 
+        description="Meet the dedicated team shaping young minds at The Broadoak Schools."
+        url="https://broadoakschools.com/staff"
+      />
     <main className="staff-page">
       {/* Hero Section */}
       <section className="staff-hero">
@@ -153,5 +160,6 @@ export const StaffPage = () => {
         </div>
       )}
     </main>
+        </>
   );
 };

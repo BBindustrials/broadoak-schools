@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { fetchPublishedNews, fetchNewsBySlug, fetchNewsByCategory, type NewsItem } from '../../services/newsService';
+import { SEO } from '../../components/common/SEO';
 
 export const News = () => {
   const { slug } = useParams();
@@ -117,6 +118,12 @@ export const News = () => {
 
   // News List View
   return (
+    <>
+      <SEO 
+        title="News & Updates" 
+        description="Stay informed with the latest happenings at The Broadoak Schools."
+        url="https://broadoakschools.com/news"
+      />
     <main className="news-page">
       <section className="news-hero">
         <div className="container">
@@ -208,5 +215,6 @@ export const News = () => {
         </div>
       </section>
     </main>
+      </>
   );
 };

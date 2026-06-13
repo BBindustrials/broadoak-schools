@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaClock, FaFacebookF, FaTiktok, FaInstagram, FaYoutube } from 'react-icons/fa';
 import { supabase } from '../../integrations/supabase/client';
+import { SEO } from '../../components/common/SEO';
 
 export const Contact = () => {
   const [formData, setFormData] = useState({
@@ -77,6 +78,12 @@ export const Contact = () => {
   };
 
   return (
+    <>
+      <SEO 
+        title="Contact Us" 
+        description="Get in touch with The Broadoak Schools. Have questions or want to schedule a visit? We're here to help."
+        url="https://broadoakschools.com/contact"
+      />
     <main className="contact-page">
       {/* Hero Section */}
       <section className="contact-hero">
@@ -267,5 +274,6 @@ export const Contact = () => {
         </div>
       </section>
     </main>
+      </>
   );
 };

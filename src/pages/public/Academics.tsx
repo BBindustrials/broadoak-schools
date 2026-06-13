@@ -1,6 +1,7 @@
 /* eslint-disable react-hooks/immutability */
 import { useEffect, useState } from 'react';
 import { fetchAcademicLevels, fetchClubs, type AcademicLevel, type Club } from '../../services/academicsService';
+import { SEO } from '../../components/common/SEO';
 
 export const AcademicsPage = () => {
   const [levels, setLevels] = useState<AcademicLevel[]>([]);
@@ -33,6 +34,12 @@ export const AcademicsPage = () => {
   }
 
   return (
+    <>
+      <SEO 
+        title="Academics" 
+        description="Explore the academic programs at The Broadoak Schools. Discover our curriculum, teaching methods, and learning opportunities."
+        url="https://broadoakschools.com/academics"
+      />
     <main className="academics-page">
       <section className="academics-hero">
         <div className="container">
@@ -107,5 +114,6 @@ export const AcademicsPage = () => {
         </section>
       )}
     </main>
+    </>        
   );
 };

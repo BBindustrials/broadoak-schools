@@ -1,6 +1,7 @@
 /* eslint-disable react-hooks/immutability */
 import { useEffect, useState } from 'react';
 import { fetchUpcomingEvents, fetchPastEvents, type EventItem } from '../../services/eventService';
+import { SEO } from '../../components/common/SEO';
 
 export const EventsPage = () => {
   const [upcomingEvents, setUpcomingEvents] = useState<EventItem[]>([]);
@@ -84,6 +85,12 @@ export const EventsPage = () => {
   }
 
   return (
+    <>
+      <SEO 
+        title="Events" 
+        description="Discover all the exciting events happening at The Broadoak Schools. Stay updated with upcoming and past events."
+        url="https://broadoakschools.com/events"
+      />
     <main className="events-page">
       <section className="events-hero">
         <div className="container">
@@ -144,5 +151,6 @@ export const EventsPage = () => {
         </div>
       </section>
     </main>
+      </>
   );
 };
