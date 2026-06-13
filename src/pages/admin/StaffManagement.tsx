@@ -285,7 +285,7 @@ export const StaffManagement = () => {
                       <label>Position *</label>
                       <input
                         type="text"
-                        placeholder="e.g., Principal, Head Teacher"
+                        placeholder="e.g., Vice Principal, Head Teacher"
                         value={formData.position}
                         onChange={(e) => setFormData({ ...formData, position: e.target.value })}
                         required

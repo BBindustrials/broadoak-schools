@@ -161,7 +161,7 @@ export const AboutPage = () => {
                 <img src={principalPhoto} alt="Mr. Augustine Ogbaji Omaj" className="leadership-image" />
               </div>
               <h3>Mr. Augustine Ogbaji Omaj</h3>
-              <p className="leadership-position">Principal / Head of School</p>
+              <p className="leadership-position">Vice Principal / Head of School</p>
               <div className="leadership-message">
                 <p>"Every child is unique and deserves an education that brings out their best. I am proud to lead a team of dedicated educators who work tirelessly to ensure that every student reaches their full potential."</p>
               </div>
