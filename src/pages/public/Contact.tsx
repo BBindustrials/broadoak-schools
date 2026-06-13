@@ -105,7 +105,7 @@ export const Contact = () => {
                   <FaMapMarkerAlt />
                 </div>
                 <h3>Visit Us</h3>
-                <p>Plot 4 Federal Housing Estate</p>
+                <p>Plot 4, the broadoak schools crescent, Federal Housing Estate,</p>
                 <p>off MCC, Uratta Road</p>
                 <p>Owerri, Imo State, Nigeria</p>
               </div>

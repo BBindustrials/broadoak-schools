@@ -370,7 +370,7 @@ export const Home = () => {
         <div className="container">
           <div className="contact-info">
             <h2>Get in Touch</h2>
-            <p><strong>📍 Address:</strong> Plot 4 Federal Housing Estate, off MCC, Uratta Road, Owerri, Imo State, Nigeria</p>
+            <p><strong>📍 Address:</strong> Plot 4, the broadoak schools crescent, Federal Housing Estate, off MCC, Uratta Road, Owerri, Imo State, Nigeria</p>
             <p><strong>📞 Phone:</strong> +234 803 750 3627, +234 810 444 6168</p>
             <p><strong>📧 Email:</strong> info@broadoakschools.com</p>
             <p><strong>🕒 Office Hours:</strong> Monday – Friday, 8:00 AM – 4:00 PM</p>
